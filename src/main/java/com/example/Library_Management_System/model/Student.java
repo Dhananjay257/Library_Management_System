@@ -27,6 +27,7 @@ public class Student {
     private Department department;
 
     private String mobNo;
+    private String email;
 
     @OneToOne(mappedBy = "student",cascade=CascadeType.ALL)
     Card card;

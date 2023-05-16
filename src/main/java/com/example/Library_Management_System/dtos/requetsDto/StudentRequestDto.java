@@ -16,4 +16,5 @@ public class StudentRequestDto {
     private int age;
     private Department department;
     private String mobNo;
+    private String email;
 }

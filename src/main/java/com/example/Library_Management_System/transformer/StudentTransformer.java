@@ -13,6 +13,7 @@ public class StudentTransformer {
         student.setName(studentRequestDto.getName());
         student.setDepartment(studentRequestDto.getDepartment());
         student.setMobNo(studentRequestDto.getMobNo());
+        student.setEmail(studentRequestDto.getEmail());
         return student;
     }
     public static StudentResponseDto studentToStudentResponseDto(Student student)
@@ -23,6 +24,7 @@ public class StudentTransformer {
         studentResponseDto.setAge(student.getAge());
         studentResponseDto.setMobNo(student.getMobNo());
         studentResponseDto.setDepartment(student.getDepartment());
+        studentResponseDto.setEmail(student.getEmail());
         return studentResponseDto;
     }
 }

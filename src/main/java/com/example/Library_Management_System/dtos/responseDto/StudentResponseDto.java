@@ -23,5 +23,7 @@ public class StudentResponseDto {
 
     private String mobNo;
 
+    private String email;
+
     private CardResponseDto cardResponseDto;
 }

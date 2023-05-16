@@ -11,7 +11,9 @@ import lombok.Setter;
 @Getter
 @Setter
 public class IssueBookResponseDto {
+
+    private String bookName;
     private String transactionNumber;
     private TransactionStatus transactionStatus;
-    private String bookName;
+
 }

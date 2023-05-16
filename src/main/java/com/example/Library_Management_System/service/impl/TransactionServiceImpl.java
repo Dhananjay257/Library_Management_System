@@ -86,7 +86,7 @@ public class TransactionServiceImpl implements TransactionService {
 
         cardRepository.save(card); // save card, book and transaction.
 
-        // prepare response dto;
+        // prepare response dtp;
 
         IssueBookResponseDto issueBookResponseDto = new IssueBookResponseDto();
         issueBookResponseDto.setBookName(book.getTitle());
@@ -96,8 +96,8 @@ public class TransactionServiceImpl implements TransactionService {
         String text = "Congrats! " + card.getStudent().getName() +  " You have been issued the book " + book.getTitle();
 
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("acciojobbackendapril@gmail.com");
-        message.setTo(card.getStudent().getMobNo());
+        message.setFrom("noreplylmsapril@gmail.com");
+        message.setTo(card.getStudent().getEmail());
         message.setSubject("Issue book");
         message.setText(text);
         emailSender.send(message);
